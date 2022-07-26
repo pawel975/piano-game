@@ -1,0 +1,10 @@
+@use "../../variables.scss" as *;
+
+.key {
+    width: 5rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border: 0.05rem black solid;
+    height: 7rem;
+    background: $keyColor;
+}

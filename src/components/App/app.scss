@@ -1,0 +1,18 @@
+@use '../../variables.scss' as *;
+@use '../Key/key.scss';
+
+.app {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: $boardColor;
+
+    .keyBoard {
+        position: absolute;
+        bottom: 0;
+        // outline: 2px solid red;
+        height: auto;
+        width: 100%;
+        display: flex;
+    }
+}
