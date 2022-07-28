@@ -7,4 +7,13 @@
     border: 0.05rem black solid;
     height: 7rem;
     background: $keyColor;
+    position: relative;
+
+    span {
+        position: absolute;
+        left: 15%;
+        top: 15%;
+        font-weight: bold;
+    }
+
 }

@@ -1,9 +1,19 @@
+import * as Tone from 'tone'
+import { KeyProp } from '../../interfaces';
 
-const Key = () => {
+const synth = new Tone.Synth().toDestination();
+
+
+const Key = (props: KeyProp) => {
+    
+    const handleKeyClick = () => {
+        synth.triggerAttackRelease(props.sound, props.soundLength);
+    }
+
     return (
         <>
-            <div className="key">
-                
+            <div onClick={handleKeyClick} className="key">
+                <span>{props.sound}</span>
             </div>
         </>
     )
